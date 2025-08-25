@@ -1,20 +1,19 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - KAIRALI</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
 </head>
 <body class="is-preload">
   <div id="wrapper">
-
     <!-- Header -->
     <header id="header">
       <div class="inner">
         <a href="index.html" class="logo" aria-label="KAIRALI Home">
-          <span class="symbol"><img src="images/logo.png" alt="KAIRALI Logo" style="width:120px; height:auto;" /></span>
+          <span class="symbol"><img src="images/logo.png" alt="KAIRALI Logo" style="width:120px; height:auto;"></span>
           <span class="title">KAIRALI</span>
         </a>
         <nav aria-label="Main navigation">
@@ -24,7 +23,6 @@
         </nav>
       </div>
     </header>
-
     <!-- Menu -->
     <nav id="menu" aria-label="Site menu">
       <h2>Menu</h2>
@@ -35,62 +33,44 @@
         <li><a href="contacts.html">Contact</a></li>
       </ul>
     </nav>
-
     <!-- Main -->
-    <div id="main">
+    <main id="main">
       <div class="inner">
         <header>
           <h1>Contact KAIRALI</h1>
           <p>We’d love to hear from you! Whether you’re a student, researcher, or potential collaborator, feel free to reach out.</p>
         </header>
-
-        <!-- Contact info cards -->
-
-  <div class="col-6 col-12-medium">
-    <div class="box">
-      <h3>Email</h3>
-      <p><a href="mailto:k.p.unnikrishnan@gmail.com">k.p.unnikrishnan@gmail.com</a></p>
-    </div>
-  </div>
-        
- <div class="row gtr-uniform">
-  <div class="col-6 col-12-medium">
-    <div class="box">
-      <h3>Email</h3>
-      <p><a href="mailto:thomas_nithin@outlook.com">thomas_nithin@outlook.com</a></p>
-    </div>
-  </div>
-
-
-  <div class="col-6 col-12-medium">
-    <div class="box">
-      <h3>GitHub</h3>
-      <p><a href="https://github.com/Kerala-AI-Research-Initiative" target="_blank" rel="noopener">github.com/Kerala-AI-Research-Initiative</a></p>
-    </div>
-  </div>
-
-  <div class="col-6 col-12-medium">
-    <div class="box">
-      <h3>LinkedIn</h3>
-      <p><a href="#">LinkedIn Page</a></p>
-    </div>
-  </div>
-
-  <div class="col-6 col-12-medium">
-    <div class="box">
-      <h3>X / Twitter</h3>
-      <p><a href="#">@kairali_ai</a></p>
-    </div>
-  </div>
-</div>
-
+        <section class="contact-cards" style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top:2rem;">
+          <div class="box" style="flex:1 1 250px; min-width:250px;">
+            <h3>Email (Unnikrishnan KP)</h3>
+            <p><a href="mailto:k.p.unnikrishnan@gmail.com">k.p.unnikrishnan@gmail.com</a></p>
+          </div>
+          <div class="box" style="flex:1 1 250px; min-width:250px;">
+            <h3>Email (Nithin Thomas)</h3>
+            <p><a href="mailto:thomas_nithin@outlook.com">thomas_nithin@outlook.com</a></p>
+          </div>
+          <div class="box" style="flex:1 1 250px; min-width:250px;">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/Kerala-AI-Research-Initiative" target="_blank" rel="noopener">Kerala-AI-Research-Initiative</a></p>
+          </div>
+          <div class="box" style="flex:1 1 250px; min-width:250px;">
+            <h3>LinkedIn</h3>
+            <p><a href="#" aria-disabled="true" tabindex="-1">Coming soon</a></p>
+          </div>
+          <div class="box" style="flex:1 1 250px; min-width:250px;">
+            <h3>X / Twitter</h3>
+            <p><a href="#" aria-disabled="true" tabindex="-1">@kairali_ai (Coming soon)</a></p>
+          </div>
+        </section>
+      </div>
+    </main>
     <!-- Footer -->
     <footer id="footer">
       <div class="inner">
         <section>
           <h2>Find us on</h2>
           <a href="https://github.com/Kerala-AI-Research-Initiative" target="_blank" rel="noopener">
-            <img src="images/github.png" alt="GitHub" style="width:60px; height:60px; vertical-align:middle;" />
+            <img src="images/github.png" alt="GitHub" style="width:60px; height:60px; vertical-align:middle;">
           </a>
         </section>
         <ul class="copyright">
@@ -99,22 +79,23 @@
         </ul>
       </div>
     </footer>
-
   </div>
-
   <!-- Scripts -->
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/browser.min.js"></script>
   <script src="assets/js/breakpoints.min.js"></script>
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
-
   <style>
     .box {
       border: 1px solid rgba(255,255,255,0.15);
       border-radius: 8px;
       padding: 1rem 1.25rem;
       margin-bottom: 1rem;
+      background: rgba(255,255,255,0.02);
+    }
+    @media (max-width: 700px) {
+      .contact-cards { flex-direction: column; gap: 1rem; }
     }
   </style>
 </body>
